@@ -1,0 +1,12 @@
+{
+    "name": "times-content",
+    "version": "1.0.0",
+    "main": "itheima.js",
+    "description": "提供格式化时间，HTMLEscape的功能",
+    "keywords": [
+        "newTimes",
+        "newHtml",
+        "oldHtml"
+    ],
+    "license": "ISC"
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <button class="btnGET">GET</button>
+    <button class="btnPOST">POST</button>
+    <button class="del">delete</button>
+    <button class="jsonp">jsonp</button>
+    <script>
+
+        $(function(){
+            
+            $('.btnGET').on('click',function(){
+                $.ajax({
+                    type:'GET',
+                    url:'http://127.0.0.1/api/get',
+                    data:{name:'zs',age:20},
+                    success:function(res){
+                        console.log(res);
+                        
+                    }
+                })
+            })
+
+            $('.btnPOST').on('click',function(){
+                $.ajax({
+                    type:'POST',
+                    url:'http://127.0.0.1/api/post',
+                    data:{bookname:'是否是'},
+                    success:function(res){
+                        console.log(res);
+                    }
+                })
+            })
+            //为删除按钮
+            $('.del').on('click',function(){
+                $.ajax({
+                    type:'DELETE',
+                    url:'http://127.0.0.1/api/delete',
+                    success:function(res){
+                        console.log(res);
+                    }
+                })
+            })
+
+            $('.jsonp').on('click',function(){
+                $.ajax({
+                    type:'GET',
+                    url:'http://127.0.0.1/api/jsonp',
+                    dataType:'jsonp',
+                    success:function(res){
+                        console.log(res);
+                    }
+                })
+            })
+        })
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "moment": "^2.29.4"
+  },
+  "name": "day2",
+  "version": "1.0.0",
+  "main": "02-了解req.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
